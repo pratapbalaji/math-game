@@ -1,10 +1,12 @@
 require_relative 'player'
+require_relative 'turn'
 
-player1 = Player.new
+player1 = Player.new('Player 1')
+player2 = Player.new('Player 2')
 
-puts player1.total_lives
-puts player1.current_lives
-player1.reduce_life
-puts player1.current_lives
-player1.reduce_life
-puts player1.current_lives
+turn = Turn.new(player1)
+
+puts turn.play_turn
+
+
+

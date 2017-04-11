@@ -1,8 +1,11 @@
 class Player
+
+  attr_reader :name
   attr_reader :total_lives
   attr_accessor :current_lives
 
-  def initialize
+  def initialize(input_name)
+    @name = input_name
     @total_lives = 3
     @current_lives = 3
   end

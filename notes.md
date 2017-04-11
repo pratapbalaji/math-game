@@ -8,7 +8,6 @@ Player
 Question
     responsible for creating a Math add question instance
         State: number1, number 2, expected_answer
-        Behavior: create_question
         
 Game
     responsible for creating a game instance 
