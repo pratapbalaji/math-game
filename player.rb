@@ -15,4 +15,8 @@ class Player
     @current_lives = 0 if @current_lives < 0
   end
 
+  def show_status
+    return @current_lives.to_s + '/' + @total_lives.to_s
+  end
+
 end

@@ -8,12 +8,14 @@ class Turn
   end
 
   def play_turn
+    puts '----- NEW TURN ------'
     puts @current_player.name + ": What is " + @question.number1.to_s + " + " + @question.number2.to_s + "?"
     user_input = gets.chomp.to_i
     if @question.check_answer(user_input)
-      puts 'Bingo'
+      puts @current_player.name + ': Bingo!'
     else
-      puts 'Whaaa??'
+      puts @current_player.name + ': NOOOOOOOO!'
+      @current_player.reduce_life
     end
   end
 

@@ -1,12 +1,10 @@
+require_relative 'game'
 require_relative 'player'
 require_relative 'turn'
 
-player1 = Player.new('Player 1')
-player2 = Player.new('Player 2')
+game = Game.new
 
-turn = Turn.new(player1)
-
-puts turn.play_turn
+game.start_game
 
 
 
